@@ -1,0 +1,136 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+    font-family:"Ninja Naruto";src:url("./assets/font/Ninja_Naruto/njnaruto.eot") format("eot"),
+    url("./assets/font/Ninja_Naruto/njnaruto.woff") format("woff"),
+    url("./assets/font/Ninja_Naruto/njnaruto.ttf") format("truetype"),
+    url("./assets/font/Ninja_Naruto/njnaruto.svg#NinjaNaruto") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family:"Ninja Naruto";
+    background:url(./assets/images/wallpapersden.com_city-4k-anime-art_4800x2400.jpg)
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin:0;
+    font-weight: normal;
+}
+h1 {
+    margin: 40px auto;
+    text-align: center;
+    color: yellow;
+}
+/* pets */
+.pets{
+    margin: 0 auto;
+    position: relative;
+}
+.pets_container{
+    max-width:1322px;
+    margin:0 auto;
+    width: 100%;
+    padding-bottom: 99px;
+}
+.pets_content{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+/* cards */
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1160px;
+    width: 100%;
+    justify-content: space-between;
+    row-gap: 18px;
+}
+.scale {
+    transition: .5s;
+    position: relative;
+}
+   .card:hover .scale{
+    transform: scale(1.05);
+}
+.card{
+    border-radius: 5px;
+    border: 1px solid #FA6F32;
+    height: 426px;
+    text-decoration: none;
+    color:black;
+}
+.card_photo > img{
+    width: 306px;
+    height: 366px;
+}
+.card_icon > img{
+    width: 32px;
+}
+.card_content{
+    display: flex;
+    flex-direction:row ;
+    margin: 3px 12px 14px 16px;
+    justify-content: space-between;
+}
+.card_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_text h4{
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.card_text span{
+    font-size: 15px;
+    line-height: 18px;
+}
+/* btn_favourite */
+.btn_favourite{
+    text-align: center;
+    display: block;
+}
+.btn_favourite{
+    text-decoration: none;
+}
+.btn_choose_favourite{
+    color: #FFFFFF;
+    background: #FE9013;
+    border-radius: 25px;
+    width: 298px;
+    height: 54px;
+    margin-top:80px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #FE9013;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+.btn_choose_favourite:hover{
+    background: #FDDCC4;
+    cursor: pointer;
+}
+.pets_background{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
