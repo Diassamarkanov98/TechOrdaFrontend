@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../assets/stylesheet/style_pets.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <title>Our pets</title>
+</head>
+<body>
+    <h1>Ourpets</h1>
+    <section class="main">
+        <header class="header">
+            <div class="sidebar visibility">
+                <div class="burger_menu" id="burgerMenu">
+                    <div class="burger_logo">
+                        <a class="burger_logo_text" href="#">
+                            <span class="burger__logo_title">Cozy House</span>
+                            <span class="burger__logo_subtitle">Shelter for pets in Boston</span>
+                        </a>
+                    </div>
+                    <div class="burger_container">
+                        <ul class="burger_nav">
+                            <li><a class="burger_nav__link" href="./../main/index.html">About the shelter</a></li>
+                            <li><a class="burger_nav__link our_pets_active" href="#">Our pets</a></li>
+                            <li><a class="burger_nav__link" href="#helptheshelter">Help the shelter</a></li>
+                            <li><a class="burger_nav__link" href="#contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__inner"> 
+                    <div class="header__logo">
+                        <a class="header_logo_text" href="./../site/index.html">
+                            <span class="header__logo_title">Cozy House</span>
+                            <span class="header__logo_subtitle">Shelter for pets in Boston</span>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav">
+                            <li><a class="nav__link" href="./../main/index.html">About the shelter</a></li>
+                            <li><a class="nav__link our_pets_active" href="#">Our pets</a></li>
+                            <li><a class="nav__link" href="./../main/index.html#helptheshelter">Help the shelter</a></li>
+                            <li><a class="nav__link" href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <button class="burger" id="btnBurger">
+                        <span id="1"></span>
+                        <span id="2"></span>
+                        <span id="3"></span>
+                    </button>
+                </div>
+            </div>        
+        </header>
+        <div class="our_friends">
+            <!-- <div class="our_friends_container"> -->
+                <div class="container">
+                    <div class="intro__inner">
+                        <div class="our_friends_title">Our friends who 
+                            <br>are looking for a house
+                        </div>
+                        <div class="slider-wrapper">
+                            <div class="slider" id="our_pets_slider">
+                            </div>
+                            <div class="slider_arrows">
+                                <a class="arrow_left_double" id="arrow_left_double"><<</a>
+                                <a class="arrow_left" id="arrow_left"><</a>
+                                <div class="pagination" id="page_counter">1</div>
+                                <a class="arrow_right" id="arrow_right">></a>
+                                <a class="arrow_right_double" id="arrow_right_double">>></a>
+                            </div>
+                        </div>
+                </div>      
+            <!-- </div> -->
+        </div>
+    </section>
+    <footer class="contacts" id="contacts">
+        <div class="footer_wrapper">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="footer_questions">
+                        <h3>For questions and suggestions</h3>
+                        <a class="footer_mail" href = "mailto: email@shelter.com">
+                            <img src="./../../assets/icons/icon-email.svg">
+                            <h4>email@shelter.com</h4>
+                        </a>
+                        <a class="footer_phone" href="tel:+13 674 567 75 54">
+                            <img src="./../../assets/icons/icon-phone.svg">
+                            <h4>+13 674 567 75 54</h4>
+                        </a>
+                    </div>
+                    <div class="footer_visit">
+                        <h3>We are waiting for your visit</h3>
+                        <a class="footer_adress" href="https://goo.gl/maps/z8fiypFWdiGZUzdV7">
+                            <img src="./../../assets/icons/icon-marker.svg">
+                            <h4>1 Central Street, Boston 
+                                <br/>(entrance from the store)
+                            </h4>
+                        </a>
+                        <a class="footer_adress" href="https://goo.gl/maps/z8fiypFWdiGZUzdV7">
+                            <img src="./../../assets/icons/icon-marker.svg">
+                            <h4>18 South Park, London </h4>
+                        </a>
+                    </div>
+                    <img class="footer_img" src="./../../assets/images/footer-puppy.png"></img>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"><img src="./../../assets/icons/modal_vector.svg"></span>
+            <div class="container_popup" id="container_popup"></div>
+        </div>
+    </div>
+    <script src="./../../assets/js/burger.js"></script>
+    <script  type="module" src="./../../assets/js/pagination.js"></script>
+    <script src="./../../assets/js/popup.js"></script>
+</body>

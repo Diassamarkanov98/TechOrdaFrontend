@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../assets/stylesheet/style.css">
+    <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Roboto Slab', serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #212529;
+        background-color: #fff;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    h1,h2,h3,h4{
+        width: auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="form_content" style="width: 50%; margin: 0 auto;">
+        <div class="contact_me_column">
+            <div class="contact_me_form contact_padding">
+                <form class="form_item" method="link" action="./../entry/index.html">
+                    <div class="form_group">
+                        <label for="name" class="form_label">Full Name</label>
+                        <input class="form_control" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_group">
+                        <fieldset>
+                            <legend class="form_label">Please select your preferred contact method:</legend>
+                            <input type="radio" id="contactChoice1" name="contact" value="email" />
+                            <label for="contactChoice1">Email</label>
+                            <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                            <label for="contactChoice2">Phone</label>
+                            <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                            <label for="contactChoice3">Mail</label>
+                        </fieldset>
+                    </div>
+                    <div class="form_group">
+                        <fieldset>
+                            <legend>Please select languages which you know:</legend>
+                            <input type="checkbox" id="english" name="english" checked>
+                            <label for="english">English</label>
+                            <input type="checkbox" id="russian" name="russian">
+                            <label for="russian">Russian</label>
+                            <input type="checkbox" id="kazakh" name="kazakh">
+                            <label for="kazakh">Kazakh</label>
+                        </fieldset>
+                        
+                    </div>
+                    <div class="form_group">
+                        <label for="email" class="form_label">Email</label>
+                        <input class="form_control" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="password" class="form_label">Password</label>
+                        <input class="form_control" type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="date" class="form_label">Date</label>
+                        <input class="form_control" type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="tel" class="form_label">Telephone</label>
+                        <input class="form_control" type="tel" id="tel" name="tel" required>
+                    </div>
+                    <button class="btn_reg_log glow_on_hover">Registration</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
