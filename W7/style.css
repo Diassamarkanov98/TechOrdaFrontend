@@ -1,0 +1,26 @@
+.navbar{
+    justify-content: center;
+    border-bottom: 1px solid var(--dark-color);
+    display: flex;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.post{
+    padding: 1rem;
+    border: #ccc 2px dotted;
+    margin: 0.7rem 0;
+}
+.comment{
+    padding: 1rem;
+    border: #ff0000 1px dotted;
+    margin: 0.7rem 0;
+}
